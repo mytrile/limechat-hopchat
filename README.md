@@ -29,7 +29,7 @@ html[channelname="#roomname"].normal {
 
 ### Screenshot
 
-![Hopchat Theme form LimeChat](https://raw.github.com/mytrile/limechat-hopchat/master/screenshot.png)
+[![Hopchat Theme form LimeChat](https://raw.github.com/mytrile/limechat-hopchat/master/screenshot.png)](https://raw.github.com/mytrile/limechat-hopchat/master/screenshot.png)
 
 ### Meta
 

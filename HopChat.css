@@ -1,0 +1,226 @@
+html {
+  font-family: 'Monaco';
+  font-size: 14px;
+  background-color: #f7f7f7;
+  color: #000;
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+}
+
+body { margin: 0; padding: 0; }
+
+/* the html tag has these classes and attributes too */
+body.normal {}
+body.console {}
+body[type=channel] {}
+body[type=talk] {}
+body[type=console] {}
+body[channelname=#limechat] {}
+
+hr { margin: 0.5em 2em; }
+a { color: #5681bf; }
+
+.inlineimage {}
+
+/* lines */
+
+.line {
+  border-top: 1px solid #e1e1e1;
+  box-shadow: 0 1px 0 white inset;
+  padding: 0px 0px 0px 120px;
+  position: relative;
+  margin: 0px;
+  opacity: 0.8
+}
+
+.line[type=join] { border-top: 1px solid #bee38b; background-color: #e0f4cd; }
+.line[type=quit] { background-color: #e9e9e9; border-top: 1px solid #dfdfdf; }
+.line[type=part] { background-color: #e9e9e9; border-top: 1px solid #dfdfdf; }
+.line[type=kick] { background-color: #f4d3cd; border-top: 1px solid #e5c1ba; }
+
+.line[alternate=even] { }
+.line[alternate=odd] { }
+.line[highlight=true] {
+  background-color: #e5ecf6;
+  border-top: 1px solid #c2d5eb;
+}
+
+.line[highlight=true] .time {
+  color: #a099a1;
+}
+
+.url { word-break: break-all; }
+.address {
+  word-break: break-all;
+}
+.address:hover {
+  text-decoration: underline;
+}
+
+.highlight { color: #f0f; font-weight: normal; }
+
+.place { color: #008; }
+
+/* nickname for text messages */
+
+.sender {
+  position: absolute;
+  padding: 5px;
+  left: 5px;
+  text-align: right;
+}
+
+.sender[type=myself] { color: #45537f; font-weight: normal; }
+.sender[type=normal] { color: #636363; font-weight: normal; }
+
+/* message body */
+
+.message {
+  padding: 5px 50px 5px 10px;
+  background-color: #fff;
+  border-left: 1px solid #e1e1e1;
+  display: block;
+  box-shadow: -1px 0 0 white;
+}
+
+.line[highlight=true] .message {background-color: #f4f7fb; }
+
+strong.highlight {
+  color: white;
+  background-color: #7097c4;
+  font-weight: normal;
+  border: 1px solid #5681bf;
+  padding: 1px 4px;
+  border-radius: 5px;
+}
+
+.message[type=system] { color: #4a4a4a; }
+.message[type=error] { color: #f00; font-weight: normal; }
+.message[type=reply] { color: #4a4a4a; }
+.message[type=error_reply] { color: #f00; }
+.message[type=dcc_send_send] { color: #088; }
+.message[type=dcc_send_receive] { color: #00c; }
+.message[type=privmsg] {}
+.message[type=notice] { color: #888; }
+.message[type=action] { color: #080; }
+.message[type=join] { color: #4a4a4a; background-color: #f5f9e7; }
+
+.message[type=join]:before {
+  content: "Welcome!";
+  font-weight: normal;
+  color: #636363;
+  position: absolute;
+  left: 10px;
+}
+
+.message[type=part] { color: #aaa; background-color: #f6f6f6; }
+
+.message[type=part]:before {
+  content: "Leaving";
+  color: #636363;
+  font-weight: normal;
+  position: absolute;
+  left: 10px;
+}
+
+.message[type=kick] { color: #636363; background-color: #f9ece7; }
+
+.message[type=kick]:before {
+  content: "Owned!";
+  color: red;
+  font-weight: normal;
+  position: absolute;
+  left: 10px;
+}
+
+.message[type=quit] { color: #aaa; background-color: #f6f6f6; }
+
+.message[type=quit]:before {
+  content: "Bye!";
+  color: #636363;
+  font-weight: normal;
+  position: absolute;
+  left: 10px;
+}
+
+.message[type=kill] { color: #080; }
+.message[type=nick] { color: #aaa; }
+
+.message[type=nick]:before {
+  content: "NickServ:";
+  font-weight: normal;
+  position: absolute;
+  left: 10px;
+  color: #636363;
+}
+
+.message[type=mode] { color: #080; }
+.message[type=topic] { color: #080; }
+.message[type=invite] { color: #080; }
+.message[type=wallops] { color: #080; }
+.message[type=debug_send] { color: #aaa; }
+.message[type=debug_receive] { color: #444; }
+
+.time {
+  color: #a099a1;
+  font-size: 9pt;
+  position: absolute;
+  right: 5px;
+  top: 30%;
+}
+
+html[channelname="#ruby-lang"].normal {
+  background: #f7f7f7 url('badges/ruby.png') no-repeat fixed bottom right !important;
+}
+
+html[channelname="#RubyOnRails"].normal {
+  background: #f7f7f7 url('badges/rubyonrails.png') no-repeat fixed bottom right !important;
+}
+
+html[channelname="#clojure"].normal {
+  background: #f7f7f7 url('badges/clojure.png') no-repeat fixed bottom right !important;
+}
+
+html[channelname="#go-nuts"].normal {
+  background: #f7f7f7 url('badges/go-nuts.png') no-repeat fixed bottom right !important;
+}
+
+html[channelname="#python"].normal {
+  background: #f7f7f7 url('badges/python.png') no-repeat fixed bottom right !important;
+}
+
+html[channelname="#django"].normal {
+  background: #f7f7f7 url('badges/django.png') no-repeat fixed bottom right !important;
+}
+
+html[channelname="#scala"].normal {
+  background: #f7f7f7 url('badges/scala.png') no-repeat fixed bottom right !important;
+}
+
+html[channelname="#playframework"].normal {
+  background: #f7f7f7 url('badges/playframework.png') no-repeat fixed bottom right !important;
+}
+
+body.normal .sender[type=myself]:after {
+  content: " ★";
+}
+
+.sender[type=normal] { color: #3e87e3; }
+.sender[type=myself] { color: #DE005A; }
+.sender[type=normal][colornumber='0']  { color: #D60056; }
+.sender[type=normal][colornumber='1']  { color: #8700D4; }
+.sender[type=normal][colornumber='2']  { color: #0020D6; }
+.sender[type=normal][colornumber='3']  { color: #00A8D6; }
+.sender[type=normal][colornumber='4']  { color: #00D1A1; }
+.sender[type=normal][colornumber='5']  { color: #31B500; }
+.sender[type=normal][colornumber='6']  { color: #B09900; }
+.sender[type=normal][colornumber='7']  { color: #D66100; }
+.sender[type=normal][colornumber='8']  { color: #D60056; }
+.sender[type=normal][colornumber='9']  { color: #8700D4; }
+.sender[type=normal][colornumber='10'] { color: #0020D6; }
+.sender[type=normal][colornumber='11'] { color: #00A8D6; }
+.sender[type=normal][colornumber='12'] { color: #00D1A1; }
+.sender[type=normal][colornumber='13'] { color: #31B500; }
+.sender[type=normal][colornumber='14'] { color: #B09900; }
+.sender[type=normal][colornumber='15'] { color: #D66100; }

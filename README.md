@@ -33,9 +33,9 @@ html[channelname="#roomname"].normal {
 
 ### Meta
 
-Theme is based on [Hipchat theme]("https://github.com/jschoolcraft/Limechat-Themes/tree/master/Hipchat")
+Theme is based on [Hipchat theme](https://github.com/jschoolcraft/Limechat-Themes/tree/master/Hipchat)
 
 * Author  - Dimitar Kostov
 * Email   - mitko.kostov@gmail.com
 * Blog    - <http://fireinside.me>
-* Twitter - [mytrile]("https://twitter.com/mytrile")
+* Twitter - [mytrile](https://twitter.com/mytrile)

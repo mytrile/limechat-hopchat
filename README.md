@@ -4,7 +4,7 @@
 
     cd ~/Library/Application\ Support/LimeChat/Themes
     git clone git://github.com/mytrile/limechat-hopchat.git
-    ln -s limechat-hopchat/Hopchat.* .
+    ln -s limechat-hopchat/HopChat.* .
     ln -s limechat-hopchat/badges .
 
 You can find where themes directory is by click Limechat -> Preferences -> Theme tab -> Open in Finder

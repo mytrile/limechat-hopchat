@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>limechat-hopchat by mytrile</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">limechat-hopchat</h1>
+        <p class="header">HopChat - Custom color theme for Limechat IRC client</p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/mytrile/limechat-hopchat/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/mytrile/limechat-hopchat/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/mytrile/limechat-hopchat">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/mytrile">mytrile</a></p>
+
+
+      </header>
+      <section>
+        <h1>HopChat - Custom color theme for Limechat IRC client</h1>
+
+<h3>Installation</h3>
+
+<pre><code>cd ~/Library/Application\ Support/LimeChat/Themes
+git clone git://github.com/mytrile/limechat-hopchat.git
+ln -s limechat-hopchat/HopChat.* .
+ln -s limechat-hopchat/badges .
+</code></pre>
+
+<p>You can find where themes directory is by click Limechat -&gt; Preferences -&gt; Theme tab -&gt; Open in Finder</p>
+
+<p>If you installed it through the AppStore it should be</p>
+
+<pre><code>$HOME/Library/Application Support/net.limechat.LimeChat-AppStore/Theme
+</code></pre>
+
+<p>If you installed it manually it should be</p>
+
+<pre><code>$HOME/Library/Application Support/LimeChat/Themes/
+</code></pre>
+
+<h3>Customization</h3>
+
+<p>You can put image in the chat window for specific room by adding image to badges directory and then this line to the Hopchat.css</p>
+
+<div class="highlight"><pre><span class="nt">html</span><span class="o">[</span><span class="nt">channelname</span><span class="o">=</span><span class="s2">"#roomname"</span><span class="o">]</span><span class="nc">.normal</span> <span class="p">{</span>
+  <span class="k">background</span><span class="o">:</span> <span class="m">#f7f7f7</span> <span class="sx">url('badges/image.png')</span> <span class="k">no-repeat</span> <span class="k">fixed</span> <span class="k">bottom</span> <span class="k">right</span> <span class="cp">!important</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+<h3>Screenshot</h3>
+
+<p><img src="https://raw.github.com/mytrile/limechat-hopchat/master/screenshot.png" alt="Hopchat Theme form LimeChat"></p>
+
+<h3>Meta</h3>
+
+<p>Theme is based on <a>Hopchat theme</a></p>
+
+<ul>
+<li>Author  - Dimitar Kostov</li>
+<li>Email   - <a href="mailto:mitko.kostov@gmail.com">mitko.kostov@gmail.com</a>
+</li>
+<li>Blog    - <a href="http://fireinside.me">http://fireinside.me</a>
+</li>
+<li>Twitter - <a>mytrile</a>
+</li>
+</ul>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		          <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-39756915-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
